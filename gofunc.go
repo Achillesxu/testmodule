@@ -10,5 +10,5 @@ import (
 
 // GoGetVersion 获取当前Go版本，也可通过 go env 查看
 func GoGetVersion() string {
-	return fmt.Sprintf("we are using Go: <%s>", runtime.Version())
+	return fmt.Sprintf("we are using Go: <%s>, Go GOARCH: <%s>", runtime.Version(), runtime.GOARCH)
 }
